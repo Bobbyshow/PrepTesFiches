@@ -1,34 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Preptesfiches by Bobbyshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>PrepTesFiches by Bobbyshow</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Preptesfiches</h1>
-        <p>Application android pour créer des fiches de préparations</p>
+    <header>
+      <div class="inner">
+        <h1>PrepTesFiches</h1>
+        <h2>Application pour créer et gérer ses fiches de préparations</h2>
+        <a href="https://github.com/Bobbyshow/PrepTesFiches" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/Bobbyshow/PrepTesFiches">View the Project on GitHub <small>Bobbyshow/PrepTesFiches</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/Bobbyshow/PrepTesFiches/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Bobbyshow/PrepTesFiches/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Bobbyshow/PrepTesFiches">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a name="preptesfiches" class="anchor" href="#preptesfiches"><span class="octicon octicon-link"></span></a>PrepTesFiches</h1>
 
 <h3>
@@ -42,24 +42,78 @@ Elle permet de créer des fiches de préparations et de les gérer. Elle permet 
 
 <p>Logiciels : Android  (min v3.0)<br>
 Version actuel : 0.3.1 (Alpha-Test)<br>
-Sauvegarde : Interne (Sans carte mémoire)<br>
+Sauvegarde : Interne<br>
 Permissions nécessaires : Aucune   </p>
 
 <h3>
-<a name="3-change-log--bug-fixes" class="anchor" href="#3-change-log--bug-fixes"><span class="octicon octicon-link"></span></a>3. Change Log / Bug Fixes</h3>
+<a name="3-description" class="anchor" href="#3-description"><span class="octicon octicon-link"></span></a>3. Description</h3>
+
+<ul>
+<li>
+<strong>fr.bshow.fichedepreparation</strong><br>
+Package principale de l'application : 
+<em>MenuPrincipal</em> : Activité principale. Lancé au démarrage.<br><em>NouvelleFiche</em> : Activité Nouvelle Fiche. Lancé lors de la création de nouvelle fiche<br><em>AncienneFiche</em> : Activité Ancienne Fiche. Lancé lors de la gestion des anciennes fiches<br><em>ChargeEtSauveService</em> : Service de Load/Save. Lancé pendant tout la durée de vie de l'appli<br><em>LayoutManager</em> : Classe LayoutManager. Délivre les écrans en fonction de l'activité appelante, et de l'objet utilisé pour le préremplissage.<br>
+</li>
+<li>
+<strong>fr.bshow.fichedepreparation.adapter</strong><br>
+Package contenant les différents adapters pour les ListView et ExpandableListView.<br>
+</li>
+<li>
+<strong>fr.bshow.fichedepreparation.constantes</strong><br>
+Package contenant les constantes utilisés dans l'application.<br>
+</li>
+<li>
+<strong>fr.bshow.fichedepreparation.enumers</strong><br>
+Package contenant les classes Enumeration.<br>
+</li>
+<li>
+<strong>fr.bshow.fichedepreparation.intefac</strong><br>
+Package contenant les Interfaces.<br>
+</li>
+<li>
+<strong>fr.bshow.fichedepreparation.lib</strong><br>
+Package contenant les classes Principales de l'application.<br>
+</li>
+</ul><h3>
+<a name="4-change-log--bug-fixes" class="anchor" href="#4-change-log--bug-fixes"><span class="octicon octicon-link"></span></a>4. Change Log / Bug Fixes</h3>
+
+<p><em>Version 0.1</em><br>
+Création de l'application : Création des fiches de séances et de séquences</p>
+
+<p><em>Version 0.2</em><br>
+Gestion de sauvegarde et charge</p>
+
+<p><em>Version 0.3</em><br>
+Gestion des fiches (CRUD)  </p>
+
+<blockquote>
+<p>Version <strong>Alpha</strong></p>
+</blockquote>
+
+<p><em>Version 0.3.1</em><br>
+Correction bug : Creation séquence cassé lorsque qu'il n'en existe pas.</p>
 
 <h3>
-<a name="4-bug-connus" class="anchor" href="#4-bug-connus"><span class="octicon octicon-link"></span></a>4. Bug connus</h3>
+<a name="5-bug-connus" class="anchor" href="#5-bug-connus"><span class="octicon octicon-link"></span></a>5. Bug connus</h3>
+        </section>
 
-<h3>
-<a name="5-liens" class="anchor" href="#5-liens"><span class="octicon octicon-link"></span></a>5. Liens</h3>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Bobbyshow">Bobbyshow</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        <aside id="sidebar">
+          <a href="https://github.com/Bobbyshow/PrepTesFiches/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Bobbyshow/PrepTesFiches/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Bobbyshow/PrepTesFiches"></a> is maintained by <a href="https://github.com/Bobbyshow">Bobbyshow</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+  
   </body>
 </html>
