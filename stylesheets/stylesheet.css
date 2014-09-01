@@ -120,7 +120,7 @@ aside#sidebar {
 }
 
 aside#sidebar p.repo-owner,
-aside#sidebar p.repo-owner a {
+aside#sidebar p.repo-owner a, aside#sidebar .titre {
   font-weight: bold;
 }
 
@@ -458,6 +458,9 @@ footer a:hover {
     min-height: 0;
   }
   aside#sidebar a.button {
+    display: none;
+  }
+  aside#sidebar .titre {
     display: none;
   }
   #main-content h1:before,
