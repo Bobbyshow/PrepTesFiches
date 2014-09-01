@@ -109,6 +109,10 @@ header h2 {
   max-width: 100%;
 }
 
+img#logo {
+    margin-left:40%;
+}
+
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
@@ -148,13 +152,17 @@ header a.button {
   top: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
-aside a.button {
+aside a.button, a#telecharger {
   width: 138px;
   padding-left: 64px;
   display: block;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
   margin-bottom: 20px;
   font-size: 21px;
+}
+
+a#telecharger {
+    background: transparent url(../images/apk-button.png) 0 0 no-repeat;
 }
 
 code, pre {
@@ -479,4 +487,8 @@ footer a:hover {
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+    img#logo {
+        margin-left:30%;
+    }
+}
